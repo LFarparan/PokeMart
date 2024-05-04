@@ -1,0 +1,37 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.store-header{
+    border: 1px solid blue;
+    max-width: 85%;
+    margin: auto;
+}
+
+.featured-section{
+    border: 1px solid blue;
+    max-width: 80%;
+    margin: auto;
+    padding: max(10px,1vw);
+}
+
+h2.feat{
+    margin: 1rem .5rem;
+}
+
+.featurecon{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.cards{
+    width: 15vw;
+    min-height: 30vh;
+    border: 1px solid gray;
+    border-radius: 15px;
+    padding: 1rem;
+    
+}

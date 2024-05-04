@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './Homepage.jsx'
-import StorePage from './components/StorePage.jsx'
+import StorePage from './Storepage.jsx'
 import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
