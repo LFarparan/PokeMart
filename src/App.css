@@ -1,0 +1,68 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.headercon{
+    width: 85vw;
+    margin: auto;
+    /* border: 1px solid black; */
+}
+
+.landingcon{
+    min-height: 90.2vh;
+    text-align: center;
+    /* border: 1px solid black; */
+    position: relative;
+    display: flex;
+    align-items: center;
+
+}
+
+.landingcon::before {
+    content: "";
+    background: url('./assets/palworld-key-art.webp') no-repeat center center;
+    background-size: cover;
+    opacity: 0.4;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+  }
+
+/* company */
+.company{
+    padding: .7rem;
+}
+
+/* landing */
+div.description{
+    border-radius: 20px;
+    background-color: hsla(0, 0%, 26%, .6);
+    color: rgb(237, 239, 241);
+    margin: auto;
+    width: max(400px,40vw);
+    min-height: 40vh;
+    padding: 8vh;
+}
+
+p.company-desc{
+    margin: 1rem;
+    font-size: 18px;
+}
+
+button.storelink{
+    padding: .6rem;
+    margin: 1rem;
+    border: 0px;
+    font-weight: 700;
+    color: gray;
+}
+
+button.storelink:hover{
+    background-color: gray;
+    color: white;
+}
