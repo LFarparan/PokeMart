@@ -8,7 +8,7 @@ import React, { useState, createContext } from "react"
 export const PokeContext = createContext();
 
 export default function StorePage(){
-    const [previewPoke, setPreviewPoke] = useState('pikachu')
+    const [previewPoke, setPreviewPoke] = useState('milotic')
 
     return(
         <>

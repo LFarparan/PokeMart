@@ -13,6 +13,7 @@
 .featured-section{
     border: 1px solid blue;
     max-width: 80vw;
+    min-height: 48vh;
     margin: auto;
     padding: max(10px,1vw);
 }
@@ -68,7 +69,7 @@ h2.feat{
 .search-section{
     margin: auto;
     display: flex;
-    min-height: 80vh;
+    min-height: 55vh;
     width: 80vw;
     
 }
