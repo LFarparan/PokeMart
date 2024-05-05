@@ -1,5 +1,6 @@
 import Company from "./components/Company"
 import Featured from "./components/Featured"
+import Search from "./components/Search"
 import './Store.css'
 
 export default function StorePage(){
@@ -10,6 +11,10 @@ export default function StorePage(){
             </div>
             <div className="featured-section">
                 <Featured/>
+            </div>
+            <div className="search-section">
+                <Search/>
+                <Search/>
             </div>
         </>
     )
