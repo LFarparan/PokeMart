@@ -74,7 +74,7 @@ h2.feat{
 }
 
 .searchbox{
-    min-width: 40vw;
+    min-width: 35vw;
     border: 1px solid cyan;
     display: flex;
     flex-direction: column;
@@ -102,4 +102,30 @@ input{
 .searchbtn:hover{
     background-color: rgb(209, 255, 255);
     color: rgb(66, 66, 66);
+}
+
+/* preview */
+
+.previewcard{
+    width: 45vw;
+    padding: 15px 3rem;
+    border: 1px solid blue;
+}
+
+h1#pokedex{
+    margin: 20px 0px;
+}
+
+.basicinfo{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.basics{
+    padding: 1rem;
+}
+
+.pokepreview{
+    width: 200px;
+    border: 1px solid gray;
 }
