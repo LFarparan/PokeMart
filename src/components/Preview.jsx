@@ -20,12 +20,15 @@ export default function Preview(){
                 let pokeData = [{
                     name: capitalize(jsoned.species.name),
                     sprite: jsoned.sprites.front_default,
-                    price: jsoned.weight
+                    price: jsoned.weight,
+                    cry: jsoned.cries.latest,
                 }]
+                console.log(pokeData)
                 setPreviewNode(pokeData.map((pokemon) => <Previewcard key={pokemon.name} 
                                                                         sprite={pokemon.sprite} 
                                                                         name={pokemon.name}
-                                                                        price={pokemon.price} />))
+                                                                        price={pokemon.price}
+                                                                        cry={pokemon.cry} />))
             }
             catch(error){
                 setPreviewNode(<p align='center'> No preview available. Please try Again Later</p>)
