@@ -26,7 +26,7 @@ export default function Search(){
                                                                         price={pokemon.price} />))
             }
             catch(error){
-                setSearchResult(<p align='center'> Search is invalid. <br/> Check the pokemon name and try again</p>)
+                setSearchResult(<p align='center'> Search is invalid. <br/> Check the product name and try again</p>)
             }
         }
         getPoke(searchtext.current.value.toLowerCase())
