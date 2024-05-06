@@ -11,11 +11,14 @@ export default function StorePage(){
     const [previewPoke, setPreviewPoke] = useState('milotic')
 
     return(
-        <>
+        <div className="storepage">
             <PokeContext.Provider value={{previewPoke, setPreviewPoke}}>
-                <div className="store-header">
-                    <Company/>
+                <div className="storecon">
+                    <div className="store-header">
+                        <Company/>
+                    </div>
                 </div>
+                
                 <div className="featured-section">
                     <Featured/>
                 </div>
@@ -24,6 +27,7 @@ export default function StorePage(){
                     <Search/>
                 </div>
             </PokeContext.Provider>
-        </>
+            <br />
+        </div>
     )
 }

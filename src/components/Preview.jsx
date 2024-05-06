@@ -32,7 +32,7 @@ export default function Preview(){
             }
             catch(error){
                 // console.log(error)
-                setPreviewNode(<p align='center' className="previewcard"> No preview available. Please try Again Later</p>)
+                setPreviewNode(<p align='center' className="previewcard"> <br/><br/>No preview available. Please try Again Later</p>)
             }
         }
         if (previewPoke.endsWith("shiny")){

@@ -4,18 +4,36 @@
     padding: 0;
 }
 
+.storepage{
+    background-color: #FEFAF6;
+    color: rgb(30, 30, 30);
+}
+
+.storecon{
+    width: 100%;
+    background-color: #102C57;
+    color: #FEFAF6;
+}
+
 .store-header{
-    border: 1px solid blue;
     max-width: 85%;
     margin: auto;
 }
 
+p.dim{
+    color: #e5e5e5;
+    font-weight: 100;
+}
+
 
 .featured-section{
-    border: 1px solid blue;
+    border-radius: 20px;
+    background-color: #EADBC8;
     max-width: 80vw;
     min-height: 48vh;
     margin: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
     padding: max(10px,1vw);
 }
 
@@ -27,6 +45,7 @@
 h2.feat{
     margin: 1rem .5rem;
     display: inline;
+    color: #102C57;
 }
 
 .refreshbtn{
@@ -36,10 +55,14 @@ h2.feat{
     padding: .3rem;
     max-height: 35px;
     border-radius: 90%;
-    background-color: rgb(91, 187, 255);
+    background-color:#3A78B8;
+}
+
+#refresh{
+    filter: invert(87%) sepia(74%) saturate(102%) hue-rotate(297deg) brightness(104%) contrast(99%);
 }
 .refreshbtn:hover{
-    background-color: rgb(172, 255, 255);
+    background-color: rgb(159, 220, 255);
 }
 
 .featurecon{
@@ -47,27 +70,36 @@ h2.feat{
     justify-content: space-around;
 }
 
-
 .cards{
+    background-color: #FEFAF6;
     width: 15vw;
     min-height: 30vh;
-    border: 1px solid gray;
+    border: 1px solid #DAC0A3;
     border-radius: 15px;
     padding: 1vw;
     display: flex;
     flex-direction: column;
     align-items: center;
-    
 }
 
 .cardbtn{
     margin: .1rem;
     width: 90%;
     padding: .3rem .1rem;
+    background-color: #DAC0A3;
+    color: #102C57;
+    border: 0px;
+    border-radius: 6px;
+}
+
+.cardbtn:hover{
+    background-color:#EADBC8;
 }
 
 /* search */
 .search-section{
+    background-color: #EADBC8;
+    border-radius: 20px;
     margin: auto;
     display: flex;
     min-height: 55vh;
@@ -77,7 +109,6 @@ h2.feat{
 
 .searchbox{
     min-width: 35vw;
-    border: 1px solid cyan;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -92,6 +123,9 @@ h2.feat{
 
 input{
     width: max(130px, 20vw);
+    border: 1px solid #DAC0A3;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
     height: 2rem;
     font-size: 1rem;
     padding: .2rem;
@@ -100,15 +134,17 @@ input{
 .searchbtn{
     height: 2rem;
     padding: .3rem;
-    background-color: rgb(91, 187, 255);
-    color: white;
+    background-color:#3A78B8;
+    color: #FEFAF6;
     border: 0px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
     font-weight: 600;
 }
 
 .searchbtn:hover{
-    background-color: rgb(209, 255, 255);
-    color: rgb(66, 66, 66);
+    background-color: rgb(159, 220, 255);
+    color: #FEFAF6;
 }
 
 /* preview */
@@ -116,12 +152,13 @@ input{
 .previewcard{
     width: 45vw;
     padding: 15px max(15px, 3vw);
-    border: 1px solid yellowgreen;
+    border-right: 1px solid #FEFAF6;
 }
 
 h2#pokedex{
     margin: 20px 0px;
     font-size: max(22px, 1.5vw);
+    color: #102C57;
 }
 
 .basicinfo{
@@ -137,7 +174,9 @@ h2#pokedex{
 
 .pokepreview{
     width: 200px;
-    border: 1px solid gray;
+    border: 1px solid #DAC0A3;
+    border-radius: 20px;
+    background-color: #FEFAF6;
 }
 
 .searchresult{
@@ -163,7 +202,7 @@ h2#pokedex{
         padding: 3px;
     }
     .cardbtn{
-        padding: 1px;
+        padding: .1rem 1px;
     }
     .searchbox{
         width: 56vw;
@@ -171,4 +210,17 @@ h2#pokedex{
     .previewcard{
         width: 40vw;
     }
+}
+
+.soundbtn{
+    background-color: #FEFAF6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1.5rem;
+    gap: 5px;
+}
+
+.soundbtn:hover{
+    background-color: rgb(205, 166, 124);
 }

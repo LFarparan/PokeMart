@@ -4,10 +4,17 @@
     padding: 0;
 }
 
+body{
+    
+    background-color: #102C57;
+}
+
 .headercon{
     width: 85vw;
     margin: auto;
+    background-color: #102C57;
     /* border: 1px solid black; */
+    color: #FEFAF6;
 }
 
 .landingcon{
@@ -41,8 +48,7 @@
 /* landing */
 div.description{
     border-radius: 20px;
-    background-color: hsla(0, 0%, 26%, .6);
-    color: rgb(237, 239, 241);
+    background-color: hsla(30, 80%, 98%, .8);
     margin: auto;
     width: max(400px,40vw);
     min-height: 40vh;
@@ -52,6 +58,7 @@ div.description{
 p.company-desc{
     margin: 1rem;
     font-size: 18px;
+    color: #102C57;
 }
 
 button.storelink{
@@ -59,10 +66,11 @@ button.storelink{
     margin: 1rem;
     border: 0px;
     font-weight: 700;
-    color: gray;
+    background-color:#3A78B8;
+    color: #FEFAF6;
 }
 
 button.storelink:hover{
-    background-color: gray;
-    color: white;
+    background-color: #FEFAF6;
+    color: #3A78B8;
 }
