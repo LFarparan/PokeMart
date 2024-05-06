@@ -11,7 +11,7 @@ export default function Preview(){
     }
 
     useEffect(() => {
-        const getPoke = async(pokemon) => {
+        const getPoke = async(pokemon, form) => {
             let url = 'https://pokeapi.co/api/v2/pokemon/' + pokemon
             try{
                 const response = await fetch( url, {mode: 'cors'})
@@ -19,23 +19,30 @@ export default function Preview(){
                 console.log(jsoned)
                 let pokeData = [{
                     name: capitalize(jsoned.species.name),
-                    sprite: jsoned.sprites.front_default,
+                    sprite: (form === 'shiny')? jsoned.sprites.front_shiny:
+                                                jsoned.sprites.front_default,
                     price: jsoned.weight,
                     cry: jsoned.cries.latest
                 }]
-                console.log(pokeData.type)
                 setPreviewNode(pokeData.map((pokemon) => <Previewcard key={pokemon.name} 
-                                                                        sprite={pokemon.sprite} 
+                                                                        sprite={pokemon.sprite}
                                                                         name={pokemon.name}
                                                                         price={pokemon.price}
                                                                         cry={pokemon.cry} />))
             }
             catch(error){
                 // console.log(error)
-                setPreviewNode(<p align='center'> No preview available. Please try Again Later</p>)
+                setPreviewNode(<p align='center' className="previewcard"> No preview available. Please try Again Later</p>)
             }
         }
-        getPoke(previewPoke)
+        if (previewPoke.endsWith("shiny")){
+            let defaultpoke = previewPoke.replace('shiny', '');
+            getPoke(defaultpoke, 'shiny')
+        }
+        else {
+            getPoke(previewPoke, 'default')
+        }
+        
     
 
     }, [previewPoke])
