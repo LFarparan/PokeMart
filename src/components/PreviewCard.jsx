@@ -13,7 +13,7 @@ export default function Previewcard(props){
 
     return(
         <div className="previewcard">
-            <h1 id="pokedex"> PokeDex </h1>
+            <h2 id="pokedex"> Cry Simulator </h2>
             <div className="basicinfo">
                 <img src={props.sprite} alt="pokemon_sprite" className="pokepreview"/>
                 <div className="basics">
