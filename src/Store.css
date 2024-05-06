@@ -121,7 +121,7 @@ input{
 
 h2#pokedex{
     margin: 20px 0px;
-    font-size: max(22px, 2vw);
+    font-size: max(22px, 1.5vw);
 }
 
 .basicinfo{

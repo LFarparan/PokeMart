@@ -12,7 +12,7 @@ export default function SoundButton(props) {
 
   return (
     <>
-      <button onClick={playSound}>Play Cry</button>
+      <button className='cardbtn' onClick={playSound}>Play Cry</button>
       <audio ref={audioRef} src={props.cry} preload="auto" />
     </>
   );
