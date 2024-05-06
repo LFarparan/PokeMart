@@ -140,6 +140,14 @@ h2#pokedex{
     border: 1px solid gray;
 }
 
+.searchresult{
+    width: max(170px, 20vw)
+}
+
+.searchresult .cards{
+    width: 90%;
+}
+
 @media screen and (max-width: 830px) {
     .store-header {
         max-width: 98vw;

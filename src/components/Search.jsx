@@ -42,8 +42,11 @@ export default function Search(){
                 <input type="text" ref={searchtext}/>
                 <button type="button" className="searchbtn" onClick={search}> SEARCH </button>
             </div>
-            <br/><br/>
-            {searchResult}
+            <br/>
+            <div className="searchresult">
+                {searchResult}
+            </div>
+            
         </div>
         
     )
