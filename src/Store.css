@@ -43,6 +43,7 @@ p.dim{
 }
 
 h2.feat{
+    font-size: max(20px, 1.5vw);
     margin: 1rem .5rem;
     display: inline;
     color: #102C57;
@@ -102,7 +103,7 @@ h2.feat{
     border-radius: 20px;
     margin: auto;
     display: flex;
-    min-height: 55vh;
+    min-height: 48vh;
     width: 80vw;
 
 }
@@ -157,7 +158,7 @@ input{
 
 h2#pokedex{
     margin: 20px 0px;
-    font-size: max(22px, 1.5vw);
+    font-size: max(20px, 1.5vw);
     color: #102C57;
 }
 
