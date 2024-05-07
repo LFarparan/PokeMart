@@ -81,6 +81,7 @@ export default function Featured(){
                 <h2 className="feat"> Featured Goods </h2>
                 <button className="refreshbtn" onClick={refreshFeat}>
                     <img src={refresh} id='refresh' alt="jacknpoi" width='25px'/>
+                    <p className="refreshtext"> Refresh </p>
                 </button>
             </div>
              

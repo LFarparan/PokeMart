@@ -2,7 +2,7 @@ import Company from "./components/Company"
 import Featured from "./components/Featured"
 import Search from "./components/Search"
 import Preview from "./components/Preview"
-import './Store.css'
+import './styles/Store.css'
 import React, { useState, createContext } from "react"
 
 export const PokeContext = createContext();

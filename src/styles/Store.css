@@ -44,6 +44,7 @@ p.dim{
 
 h2.feat{
     font-size: max(20px, 1.5vw);
+    font-weight: 600;
     margin: 1rem .5rem;
     display: inline;
     color: #102C57;
@@ -53,10 +54,17 @@ h2.feat{
     margin-left: auto;
     margin-right: 10px; 
     border: 0px;
-    padding: .3rem;
+    padding: .3rem .45rem .3rem .3rem;
     max-height: 35px;
-    border-radius: 90%;
+    border-radius: 15px;
     background-color:#3A78B8;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+p.refreshtext{
+    color: #FEFAF6;
 }
 
 #refresh{
@@ -159,6 +167,7 @@ input{
 h2#pokedex{
     margin: 20px 0px;
     font-size: max(20px, 1.5vw);
+    font-weight: 600;
     color: #102C57;
 }
 

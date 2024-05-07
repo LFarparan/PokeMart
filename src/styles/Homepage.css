@@ -2,6 +2,21 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.roboto-thin {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 body{
@@ -29,7 +44,7 @@ body{
 
 .landingcon::before {
     content: "";
-    background: url('./assets/palworld-key-art.webp') no-repeat center center;
+    background: url('../assets/palworld-key-art.webp') no-repeat center center;
     background-size: cover;
     opacity: 0.4;
     top: 0;
@@ -41,6 +56,11 @@ body{
   }
 
 /* company */
+.companycon{
+    display: flex;
+    align-items: center;
+}
+
 .company{
     padding: .7rem;
 }
