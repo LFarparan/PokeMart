@@ -16,7 +16,6 @@ export default function Preview(){
             try{
                 const response = await fetch( url, {mode: 'cors'})
                 const jsoned = await response.json();
-                console.log(jsoned)
                 let pokeData = [{
                     name: capitalize(jsoned.species.name),
                     sprite: (form === 'shiny')? jsoned.sprites.front_shiny:
