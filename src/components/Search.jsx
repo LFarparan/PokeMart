@@ -28,6 +28,7 @@ export default function Search(){
             }
         }
         getPoke(searchtext.current.value.toLowerCase())
+        searchtext.current.value = '';
     }
 
     function capitalize(name) {
